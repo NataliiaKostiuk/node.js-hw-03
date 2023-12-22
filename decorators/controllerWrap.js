@@ -5,7 +5,7 @@ const controllerWrapper = ctrl => {
             await ctrl(req, res, next);
         }
         catch(error) {
-            next(error);
+             next(error);
         }
     }
 
