@@ -16,7 +16,7 @@ async function getById  (req, res ) {
   console.log(id);
     const result = await Contact.findById(id);
     if (!result) {
-      throw HttpError(404, `Movie with id=${id} not found`);
+      throw HttpError(404, `Contact with id=${id} not found`);
     }
     res.json(result);  
 }
